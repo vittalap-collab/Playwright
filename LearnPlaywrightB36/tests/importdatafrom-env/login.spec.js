@@ -10,16 +10,16 @@ test('test', async ({ page }) => {
 
   // go to URL
   await page.goto('/web/index.php/auth/login');
-  
   //await page.getByRole('textbox', { name: 'Username' }).click();
   //  enter username
   // process.env.APP_USERNAME importing data from env file
   await page.getByRole('textbox', { name: 'Username' }).fill(process.env.APP_USERNAME);
-
+  await page.waitForTimeout(15000);
   //await page.getByRole('textbox', { name: 'Password' }).click();
   // enter password
   // process.env.APP_PASSWORD importing data from env file
   await page.getByRole('textbox', { name: 'Password' }).fill(process.env.APP_PASSWORD);
+  await page.waitForTimeout
   // click login
   await page.getByRole('button', { name: 'Login' }).click();
   // dashbord
