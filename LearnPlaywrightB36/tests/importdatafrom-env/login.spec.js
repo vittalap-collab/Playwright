@@ -19,7 +19,7 @@ test('test', async ({ page }) => {
   // enter password
   // process.env.APP_PASSWORD importing data from env file
   await page.getByRole('textbox', { name: 'Password' }).fill(process.env.APP_PASSWORD);
-  await page.waitForTimeout
+  await page.waitForTimeout(15000);
   // click login
   await page.getByRole('button', { name: 'Login' }).click();
   // dashbord
