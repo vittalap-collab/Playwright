@@ -1,7 +1,12 @@
 // @ts-check
+
+// require('dotenv').config({
+//   path: './.env'
+// });
+require('dotenv').config();
 import { defineConfig, devices } from '@playwright/test';
 
-require('dotenv').config()
+//require('dotenv').config()
 
 /**
  * Read environment variables from file.

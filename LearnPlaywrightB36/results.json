@@ -111,14 +111,14 @@
   },
   "suites": [
     {
-      "title": "Demoqa\\Elements_TextBox.spec.js",
-      "file": "Demoqa/Elements_TextBox.spec.js",
+      "title": "importdatafrom-env\\login.spec.js",
+      "file": "importdatafrom-env/login.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "verify elements text box",
-          "ok": true,
+          "title": "test",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -131,29 +131,58 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 5460,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 29511,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Time at Work')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Time at Work')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Time at Work')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Time at Work')\u001b[22m\n\n    at D:\\Playwright\\LearnPlaywrightB36\\tests\\importdatafrom-env\\login.spec.js:27:48",
+                    "location": {
+                      "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\importdatafrom-env\\login.spec.js",
+                      "column": 48,
+                      "line": 27
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[90m//await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[90m// time at work visible (verification or asserstion)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Time at Work'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m \u001b[90m// test case 2 \u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\importdatafrom-env\\login.spec.js",
+                        "column": 48,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Time at Work')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Time at Work')\u001b[22m\n\n\n\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[90m//await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[90m// time at work visible (verification or asserstion)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Time at Work'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m \u001b[90m// test case 2 \u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\LearnPlaywrightB36\\tests\\importdatafrom-env\\login.spec.js:27:48\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-18T11:47:03.952Z",
+                  "startTime": "2026-05-18T14:05:55.510Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\Demoqa-Elements_TextBox-verify-elements-text-box-chromium\\test-finished-1.png"
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\importdatafrom-env-login-test-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\importdatafrom-env-login-test-chromium\\error-context.md"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\importdatafrom-env\\login.spec.js",
+                    "column": 48,
+                    "line": 27
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "81ef323115c162ee45dc-7b13d6761a19c8611c4e",
-          "file": "Demoqa/Elements_TextBox.spec.js",
-          "line": 4,
+          "id": "00cca7958b5db1fae7a4-12e652897bd8cbeaf2dc",
+          "file": "importdatafrom-env/login.spec.js",
+          "line": 9,
           "column": 5
         }
       ]
@@ -161,11 +190,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-18T11:47:01.683Z",
-    "duration": 8218.942000000003,
-    "expected": 1,
+    "startTime": "2026-05-18T14:05:53.157Z",
+    "duration": 32354.194000000003,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
