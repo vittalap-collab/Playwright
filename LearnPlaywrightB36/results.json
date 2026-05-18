@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\Playwright\\playwright.config.js",
-    "rootDir": "D:/Playwright/tests",
+    "configFile": "D:\\Playwright\\LearnPlaywrightB36\\playwright.config.js",
+    "rootDir": "D:/Playwright/LearnPlaywrightB36/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -16,7 +16,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "D:/Playwright/test-results",
+        "outputDir": "D:/Playwright/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -24,7 +24,7 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "D:/Playwright/tests",
+        "testDir": "D:/Playwright/LearnPlaywrightB36/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -32,7 +32,7 @@
         "timeout": 60000
       },
       {
-        "outputDir": "D:/Playwright/test-results",
+        "outputDir": "D:/Playwright/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -40,7 +40,7 @@
         },
         "id": "firefox",
         "name": "firefox",
-        "testDir": "D:/Playwright/tests",
+        "testDir": "D:/Playwright/LearnPlaywrightB36/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -48,7 +48,7 @@
         "timeout": 60000
       },
       {
-        "outputDir": "D:/Playwright/test-results",
+        "outputDir": "D:/Playwright/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -56,7 +56,7 @@
         },
         "id": "webkit",
         "name": "webkit",
-        "testDir": "D:/Playwright/tests",
+        "testDir": "D:/Playwright/LearnPlaywrightB36/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -64,7 +64,7 @@
         "timeout": 60000
       },
       {
-        "outputDir": "D:/Playwright/test-results",
+        "outputDir": "D:/Playwright/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -72,7 +72,7 @@
         },
         "id": "Microsoft Edge",
         "name": "Microsoft Edge",
-        "testDir": "D:/Playwright/tests",
+        "testDir": "D:/Playwright/LearnPlaywrightB36/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -111,13 +111,13 @@
   },
   "suites": [
     {
-      "title": "testdatajsonandExcel\\ReadExcelData.spec.js",
-      "file": "testdatajsonandExcel/ReadExcelData.spec.js",
+      "title": "Demoqa\\Elements_TextBox.spec.js",
+      "file": "Demoqa/Elements_TextBox.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test",
+          "title": "verify elements text box",
           "ok": true,
           "tags": [],
           "tests": [
@@ -129,21 +129,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 14,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 18809,
+                  "duration": 5460,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-15T09:31:28.845Z",
+                  "startTime": "2026-05-18T11:47:03.952Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\Playwright\\test-results\\testdatajsonandExcel-ReadExcelData-test-chromium\\test-finished-1.png"
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\Demoqa-Elements_TextBox-verify-elements-text-box-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -151,9 +151,9 @@
               "status": "expected"
             }
           ],
-          "id": "5bb9ebf8dba9bee194ee-5b9dc79017d36ad20190",
-          "file": "testdatajsonandExcel/ReadExcelData.spec.js",
-          "line": 9,
+          "id": "81ef323115c162ee45dc-7b13d6761a19c8611c4e",
+          "file": "Demoqa/Elements_TextBox.spec.js",
+          "line": 4,
           "column": 5
         }
       ]
@@ -161,8 +161,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-15T09:31:25.461Z",
-    "duration": 22639.60300000012,
+    "startTime": "2026-05-18T11:47:01.683Z",
+    "duration": 8218.942000000003,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
