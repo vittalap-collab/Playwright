@@ -1,4 +1,6 @@
-{
+    {
     "firstname": "Anusha",
-    "lastname": "gowda"
+    "lastname": "gowda",
+    "Username": "standard_user",
+    "Password": "secret_sauce"
 }
