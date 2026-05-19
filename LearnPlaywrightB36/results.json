@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "chromium",
         "name": "chromium",
@@ -36,7 +36,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "firefox",
         "name": "firefox",
@@ -52,7 +52,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "webkit",
         "name": "webkit",
@@ -68,7 +68,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "Microsoft Edge",
         "name": "Microsoft Edge",
@@ -104,21 +104,21 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.59.1",
-    "workers": 1,
+    "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "importdatafrom-env\\login.spec.js",
-      "file": "importdatafrom-env/login.spec.js",
+      "title": "PracticeLogin\\practicelogin.spec.js",
+      "file": "PracticeLogin/practicelogin.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test",
-          "ok": false,
+          "title": "verify login with valid username and valid password",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -131,58 +131,189 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 29511,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Time at Work')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Time at Work')\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Time at Work')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Time at Work')\u001b[22m\n\n    at D:\\Playwright\\LearnPlaywrightB36\\tests\\importdatafrom-env\\login.spec.js:27:48",
-                    "location": {
-                      "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\importdatafrom-env\\login.spec.js",
-                      "column": 48,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[90m//await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[90m// time at work visible (verification or asserstion)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Time at Work'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m \u001b[90m// test case 2 \u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\importdatafrom-env\\login.spec.js",
-                        "column": 48,
-                        "line": 27
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Time at Work')\nExpected: visible\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Time at Work')\u001b[22m\n\n\n\u001b[0m \u001b[90m 25 |\u001b[39m   \u001b[90m//await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[90m// time at work visible (verification or asserstion)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Time at Work'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m \u001b[90m// test case 2 \u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\LearnPlaywrightB36\\tests\\importdatafrom-env\\login.spec.js:27:48\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 5126,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-18T14:05:55.510Z",
+                  "startTime": "2026-05-19T10:39:27.093Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\importdatafrom-env-login-test-chromium\\test-failed-1.png"
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-cee7e-username-and-valid-password-chromium\\test-finished-1.png"
                     },
                     {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\importdatafrom-env-login-test-chromium\\error-context.md"
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-cee7e-username-and-valid-password-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-cee7e-username-and-valid-password-chromium\\trace.zip"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\importdatafrom-env\\login.spec.js",
-                    "column": 48,
-                    "line": 27
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "00cca7958b5db1fae7a4-12e652897bd8cbeaf2dc",
-          "file": "importdatafrom-env/login.spec.js",
-          "line": 9,
+          "id": "5e78c859c9492c9fee1b-b7c581106914e59eda71",
+          "file": "PracticeLogin/practicelogin.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "verify login with invalid username and valid password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4506,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-19T10:39:27.018Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-94e5e-username-and-valid-password-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-94e5e-username-and-valid-password-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-94e5e-username-and-valid-password-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e78c859c9492c9fee1b-7ae1454a1a0ad35c0c22",
+          "file": "PracticeLogin/practicelogin.spec.js",
+          "line": 22,
+          "column": 5
+        },
+        {
+          "title": "verify login with valid username and invalid password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3005,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-19T10:39:32.256Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-68c89-ername-and-invalid-password-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-68c89-ername-and-invalid-password-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-68c89-ername-and-invalid-password-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e78c859c9492c9fee1b-fdca394aa2a0a470deec",
+          "file": "PracticeLogin/practicelogin.spec.js",
+          "line": 38,
+          "column": 5
+        },
+        {
+          "title": "verify login and logout flow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5744,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-19T10:39:33.040Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogin-verify-login-and-logout-flow-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogin-verify-login-and-logout-flow-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogin-verify-login-and-logout-flow-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5e78c859c9492c9fee1b-1cb78133d14ac88efa0e",
+          "file": "PracticeLogin/practicelogin.spec.js",
+          "line": 54,
           "column": 5
         }
       ]
@@ -190,11 +321,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-18T14:05:53.157Z",
-    "duration": 32354.194000000003,
-    "expected": 0,
+    "startTime": "2026-05-19T10:39:25.839Z",
+    "duration": 13455.871000000001,
+    "expected": 4,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
