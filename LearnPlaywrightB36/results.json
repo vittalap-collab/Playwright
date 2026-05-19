@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -36,7 +36,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -52,7 +52,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "webkit",
         "name": "webkit",
@@ -68,7 +68,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "Microsoft Edge",
         "name": "Microsoft Edge",
@@ -104,20 +104,20 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.59.1",
-    "workers": 2,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "PracticeLogin\\practicelogin.spec.js",
-      "file": "PracticeLogin/practicelogin.spec.js",
+      "title": "Demoqa\\Elements_TextBox.spec.js",
+      "file": "Demoqa/Elements_TextBox.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "verify login with valid username and valid password",
+          "title": "verify elements text box",
           "ok": true,
           "tags": [],
           "tests": [
@@ -132,28 +132,18 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5126,
+                  "duration": 4436,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-19T10:39:27.093Z",
+                  "startTime": "2026-05-19T11:17:10.832Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-cee7e-username-and-valid-password-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-cee7e-username-and-valid-password-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-cee7e-username-and-valid-password-chromium\\trace.zip"
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\Demoqa-Elements_TextBox-verify-elements-text-box-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -161,159 +151,9 @@
               "status": "expected"
             }
           ],
-          "id": "5e78c859c9492c9fee1b-b7c581106914e59eda71",
-          "file": "PracticeLogin/practicelogin.spec.js",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "verify login with invalid username and valid password",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 4506,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-05-19T10:39:27.018Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-94e5e-username-and-valid-password-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-94e5e-username-and-valid-password-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-94e5e-username-and-valid-password-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "5e78c859c9492c9fee1b-7ae1454a1a0ad35c0c22",
-          "file": "PracticeLogin/practicelogin.spec.js",
-          "line": 22,
-          "column": 5
-        },
-        {
-          "title": "verify login with valid username and invalid password",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 3005,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-05-19T10:39:32.256Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-68c89-ername-and-invalid-password-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-68c89-ername-and-invalid-password-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogi-68c89-ername-and-invalid-password-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "5e78c859c9492c9fee1b-fdca394aa2a0a470deec",
-          "file": "PracticeLogin/practicelogin.spec.js",
-          "line": 38,
-          "column": 5
-        },
-        {
-          "title": "verify login and logout flow",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 5744,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-05-19T10:39:33.040Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogin-verify-login-and-logout-flow-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogin-verify-login-and-logout-flow-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\PracticeLogin-practicelogin-verify-login-and-logout-flow-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "5e78c859c9492c9fee1b-1cb78133d14ac88efa0e",
-          "file": "PracticeLogin/practicelogin.spec.js",
-          "line": 54,
+          "id": "81ef323115c162ee45dc-7b13d6761a19c8611c4e",
+          "file": "Demoqa/Elements_TextBox.spec.js",
+          "line": 5,
           "column": 5
         }
       ]
@@ -321,9 +161,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-19T10:39:25.839Z",
-    "duration": 13455.871000000001,
-    "expected": 4,
+    "startTime": "2026-05-19T11:17:08.370Z",
+    "duration": 7522.466000000015,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

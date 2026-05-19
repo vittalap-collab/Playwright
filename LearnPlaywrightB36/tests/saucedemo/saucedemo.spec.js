@@ -1,12 +1,13 @@
 import { test, expect } from '@playwright/test';
+import { SauceDemoLoginPage } from './pages/SauceDemoLoginPage.js';
+import testData from '../../testdata/saucedemo.json';
 
 test('verify login as standard user', async ({ page }) => {
-  await page.goto('https://www.saucedemo.com/');
-  await page.locator('[data-test="username"]').click();
-  await page.locator('[data-test="username"]').fill('standard_user');
-  await page.locator('[data-test="password"]').click();
-  await page.locator('[data-test="password"]').fill('secret_sauce');
-  await page.locator('[data-test="login-button"]').click();
-  await page.locator('[data-test="title"]').click();
-  await expect(page.locator('[data-test="title"]')).toBeVisible();
+  const loginPage = new SauceDemoLoginPage(page);
+  
+  await loginPage.navigateTo();
+  await loginPage.login(testData.username, testData.password);
+  const isTitleVisible = await loginPage.verifyPageTitle();
+  
+  expect(isTitleVisible).toBeTruthy();
 });
