@@ -12,6 +12,7 @@ test('verify post message in buzz', async ({ page }) => {
     await page.locator(`//textarea[@placeholder="What's on your mind?"]`).fill(Data.text);
     await page.locator('//button[@type="submit"]').click();
     //await expect(page.locator('//p[@class="oxd-grid-item oxd-grid-item--gutters"]')).toHaveText(Data.text);
-
+    // (//p[text()='hi all gm'])   locator for text
+    // partial 
 
 });
