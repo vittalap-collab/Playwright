@@ -111,13 +111,13 @@
   },
   "suites": [
     {
-      "title": "Buzz\\Postmmessege.spec.js",
-      "file": "Buzz/Postmmessege.spec.js",
+      "title": "Xpath_Locators\\RelativeXpath.spec.js",
+      "file": "Xpath_Locators/RelativeXpath.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "verify post message in buzz",
+          "title": "Verify  Xpath",
           "ok": true,
           "tags": [],
           "tests": [
@@ -129,21 +129,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 15,
+                  "workerIndex": 8,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8073,
+                  "duration": 9614,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-20T11:34:31.192Z",
+                  "startTime": "2026-05-29T12:42:50.839Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\Buzz-Postmmessege-verify-post-message-in-buzz-chromium\\test-finished-1.png"
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\Xpath_Locators-RelativeXpath-Verify-Xpath-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -151,9 +151,9 @@
               "status": "expected"
             }
           ],
-          "id": "b98221987b58d14e9dfe-a7eb4b566a343ddb0f76",
-          "file": "Buzz/Postmmessege.spec.js",
-          "line": 4,
+          "id": "86b4cf139422501b897e-2b206f3ded789bab4626",
+          "file": "Xpath_Locators/RelativeXpath.spec.js",
+          "line": 3,
           "column": 5
         }
       ]
@@ -161,8 +161,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-20T11:34:28.884Z",
-    "duration": 10534.193999998271,
+    "startTime": "2026-05-29T12:42:46.708Z",
+    "duration": 14011.551999997348,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
