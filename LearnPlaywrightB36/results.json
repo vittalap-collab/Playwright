@@ -111,13 +111,13 @@
   },
   "suites": [
     {
-      "title": "DataDrivenTest\\Task1addemploye.spec.js",
-      "file": "DataDrivenTest/Task1addemploye.spec.js",
+      "title": "DataDrivenTest\\tasj5workershift.spec.js",
+      "file": "DataDrivenTest/tasj5workershift.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "verify add employe with madatory detailes -emp1",
+          "title": "verify pay grade -shift1",
           "ok": true,
           "tags": [],
           "tests": [
@@ -129,21 +129,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 13,
+                  "workerIndex": 20,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14909,
+                  "duration": 33594,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-04T19:18:14.463Z",
+                  "startTime": "2026-06-04T23:54:04.264Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-Task1addemp-23cab-ith-madatory-detailes--emp1-chromium\\test-finished-1.png"
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-tasj5workershift-verify-pay-grade--shift1-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -151,14 +151,14 @@
               "status": "expected"
             }
           ],
-          "id": "22fdaa4c8ae8dc009872-4c7821fad9923e795ad5",
-          "file": "DataDrivenTest/Task1addemploye.spec.js",
-          "line": 11,
+          "id": "cc68cd3335063de9c55b-0980e45eab798654a1f7",
+          "file": "DataDrivenTest/tasj5workershift.spec.js",
+          "line": 10,
           "column": 5
         },
         {
-          "title": "verify add employe with madatory detailes -emp2",
-          "ok": true,
+          "title": "verify pay grade -shift2",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -169,111 +169,55 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 13,
+                  "workerIndex": 20,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 12468,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 20321,
+                  "error": {
+                    "message": "Error: page.waitForTimeout: Target page, context or browser has been closed",
+                    "stack": "Error: page.waitForTimeout: Target page, context or browser has been closed\n    at D:\\Playwright\\LearnPlaywrightB36\\tests\\DataDrivenTest\\tasj5workershift.spec.js:74:19",
+                    "location": {
+                      "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\DataDrivenTest\\tasj5workershift.spec.js",
+                      "column": 19,
+                      "line": 74
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 72 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//input[@value=\"AM\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 73 |\u001b[39m        }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 74 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m10000\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 75 |\u001b[39m\n \u001b[90m 76 |\u001b[39m        \u001b[90m// click save\u001b[39m\n \u001b[90m 77 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//button[text()=\" Save \"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\DataDrivenTest\\tasj5workershift.spec.js",
+                        "column": 19,
+                        "line": 74
+                      },
+                      "message": "Error: page.waitForTimeout: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 72 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//input[@value=\"AM\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 73 |\u001b[39m        }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 74 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m10000\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 75 |\u001b[39m\n \u001b[90m 76 |\u001b[39m        \u001b[90m// click save\u001b[39m\n \u001b[90m 77 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//button[text()=\" Save \"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[2m    at D:\\Playwright\\LearnPlaywrightB36\\tests\\DataDrivenTest\\tasj5workershift.spec.js:74:19\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-04T19:18:30.141Z",
+                  "startTime": "2026-06-04T23:54:37.937Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-Task1addemp-10ce6-ith-madatory-detailes--emp2-chromium\\test-finished-1.png"
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-tasj5workershift-verify-pay-grade--shift2-chromium\\error-context.md"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\DataDrivenTest\\tasj5workershift.spec.js",
+                    "column": 19,
+                    "line": 74
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "22fdaa4c8ae8dc009872-452cad0c2e90350381e1",
-          "file": "DataDrivenTest/Task1addemploye.spec.js",
-          "line": 11,
-          "column": 5
-        },
-        {
-          "title": "verify add employe with madatory detailes -emp3",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 13,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 18059,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-04T19:18:42.675Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-Task1addemp-3cbbe-ith-madatory-detailes--emp3-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "22fdaa4c8ae8dc009872-0c878e10e75db5f1a9b7",
-          "file": "DataDrivenTest/Task1addemploye.spec.js",
-          "line": 11,
-          "column": 5
-        },
-        {
-          "title": "verify add employe with madatory detailes -emp4",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 13,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 20842,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-04T19:19:00.812Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-Task1addemp-b6eef-ith-madatory-detailes--emp4-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "22fdaa4c8ae8dc009872-adcbc1220dc6480cb529",
-          "file": "DataDrivenTest/Task1addemploye.spec.js",
-          "line": 11,
+          "id": "cc68cd3335063de9c55b-20a53719b66bd2c7636f",
+          "file": "DataDrivenTest/tasj5workershift.spec.js",
+          "line": 10,
           "column": 5
         }
       ]
@@ -281,11 +225,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-04T19:18:10.523Z",
-    "duration": 71271.95500000007,
-    "expected": 4,
+    "startTime": "2026-06-04T23:54:02.032Z",
+    "duration": 56444.37200000044,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
