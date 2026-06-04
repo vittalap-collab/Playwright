@@ -111,13 +111,13 @@
   },
   "suites": [
     {
-      "title": "saucedemo\\Login.spec.js",
-      "file": "saucedemo/Login.spec.js",
+      "title": "DataDrivenTest\\Task1addemploye.spec.js",
+      "file": "DataDrivenTest/Task1addemploye.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "verify login data from using objects data",
+          "title": "verify add employe with madatory detailes -emp1",
           "ok": true,
           "tags": [],
           "tests": [
@@ -129,28 +129,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 18,
+                  "workerIndex": 13,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 17457,
+                  "duration": 14909,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "standard_user\n"
-                    },
-                    {
-                      "text": "secret_sauce\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-04T14:34:16.746Z",
+                  "startTime": "2026-06-04T19:18:14.463Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\saucedemo-Login-verify-login-data-from-using-objects-data-chromium\\test-finished-1.png"
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-Task1addemp-23cab-ith-madatory-detailes--emp1-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -158,9 +151,129 @@
               "status": "expected"
             }
           ],
-          "id": "e1301b2644a9b3af4e26-246271d96ea358c4557c",
-          "file": "saucedemo/Login.spec.js",
-          "line": 5,
+          "id": "22fdaa4c8ae8dc009872-4c7821fad9923e795ad5",
+          "file": "DataDrivenTest/Task1addemploye.spec.js",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "verify add employe with madatory detailes -emp2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12468,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-04T19:18:30.141Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-Task1addemp-10ce6-ith-madatory-detailes--emp2-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "22fdaa4c8ae8dc009872-452cad0c2e90350381e1",
+          "file": "DataDrivenTest/Task1addemploye.spec.js",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "verify add employe with madatory detailes -emp3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18059,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-04T19:18:42.675Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-Task1addemp-3cbbe-ith-madatory-detailes--emp3-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "22fdaa4c8ae8dc009872-0c878e10e75db5f1a9b7",
+          "file": "DataDrivenTest/Task1addemploye.spec.js",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "verify add employe with madatory detailes -emp4",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20842,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-04T19:19:00.812Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-Task1addemp-b6eef-ith-madatory-detailes--emp4-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "22fdaa4c8ae8dc009872-adcbc1220dc6480cb529",
+          "file": "DataDrivenTest/Task1addemploye.spec.js",
+          "line": 11,
           "column": 5
         }
       ]
@@ -168,9 +281,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-04T14:34:14.598Z",
-    "duration": 20105.133999999613,
-    "expected": 1,
+    "startTime": "2026-06-04T19:18:10.523Z",
+    "duration": 71271.95500000007,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

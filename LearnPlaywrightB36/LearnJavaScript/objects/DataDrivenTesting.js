@@ -5,7 +5,7 @@
 -> use 'for in loop'
 */
 
-const job = {
+const jobtitle = {
 
     job1: 'SDET QA I',
     job2: 'SDET QA II',
