@@ -1,13 +1,13 @@
 import { test, expect } from '@playwright/test';
 
-const payGrade = {
-    name1: "jhon",
-    name2: "petter",
-    name3: "alin"
- }
- for(let name in payGrade){
- 
-    test(`verify pay grade -${name}`, async({page}) => {
+const jobCategory = { 
+    category1: 'Software Development',
+    category2: "Quality Assurance",
+    category3: "Human Resources",
+    category4: "Finance"
+}
+for(let category in jobCategory){
+test(`verify pay grade -${category}`, async({page}) => {
         await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
     // enter username
@@ -25,20 +25,14 @@ const payGrade = {
     await page.locator('//span[text()="Admin"]').click()
     // click on job
     await page.getByText('Job', { exact: true }).click();
-    // click on pay grades
-    await page.locator('//a[text()="Pay Grades"]').click()
-    // click on add
+    // click job category
+    await page.locator('//a[text()="Job Categories"]').click()
+    // click add
     await page.locator('//button[text()=" Add "]').click()
     // enter name
-    await page.locator('(//input[@class="oxd-input oxd-input--active"])[2]').fill(payGrade[name])
+    await page.locator('(//input[@class="oxd-input oxd-input--active"])[2]').fill(jobCategory[category])
+    await page.waitForTimeout(10000)
     // save
-    //await page.waitForTimeout(10000)
     await page.locator('//button[text()=" Save "]').click()
-    // currency
-    // await page.locator('//button[text()=" Add "]').click()
-    // await page.locator('//div[text()="-- Select --"]').click()
-    // await page.locator('//div[text()="INR - Indian Rupee"]').click()
-    // await page.locator('(//button[text()=" Save "])[2]').click()
-    
-    })
+})
 }
