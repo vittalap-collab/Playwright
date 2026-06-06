@@ -35,7 +35,7 @@ calc(function (){
 calc( ()=> console.log("vittal")) // possible 
 
 // structure of test(test('test case title', function)
-
+// ()=>{ }
 // test cases ananymous
 // ({ page }) => { // page is a arguments
 //   await page.goto('/web/index.php/auth/login');
