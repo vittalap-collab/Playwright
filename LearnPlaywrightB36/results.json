@@ -111,13 +111,13 @@
   },
   "suites": [
     {
-      "title": "DataDrivenTest\\tasj5workershift.spec.js",
-      "file": "DataDrivenTest/tasj5workershift.spec.js",
+      "title": "JSrelated\\GreenKart2.spec.js",
+      "file": "JSrelated/GreenKart2.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "verify pay grade -shift1",
+          "title": "verify greenkart total price",
           "ok": true,
           "tags": [],
           "tests": [
@@ -129,21 +129,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 20,
+                  "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 33594,
+                  "duration": 18138,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-04T23:54:04.264Z",
+                  "startTime": "2026-06-11T06:47:03.060Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-tasj5workershift-verify-pay-grade--shift1-chromium\\test-finished-1.png"
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\JSrelated-GreenKart2-verify-greenkart-total-price-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -151,73 +151,9 @@
               "status": "expected"
             }
           ],
-          "id": "cc68cd3335063de9c55b-0980e45eab798654a1f7",
-          "file": "DataDrivenTest/tasj5workershift.spec.js",
-          "line": 10,
-          "column": 5
-        },
-        {
-          "title": "verify pay grade -shift2",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 20,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 20321,
-                  "error": {
-                    "message": "Error: page.waitForTimeout: Target page, context or browser has been closed",
-                    "stack": "Error: page.waitForTimeout: Target page, context or browser has been closed\n    at D:\\Playwright\\LearnPlaywrightB36\\tests\\DataDrivenTest\\tasj5workershift.spec.js:74:19",
-                    "location": {
-                      "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\DataDrivenTest\\tasj5workershift.spec.js",
-                      "column": 19,
-                      "line": 74
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 72 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//input[@value=\"AM\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 73 |\u001b[39m        }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 74 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m10000\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 75 |\u001b[39m\n \u001b[90m 76 |\u001b[39m        \u001b[90m// click save\u001b[39m\n \u001b[90m 77 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//button[text()=\" Save \"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\DataDrivenTest\\tasj5workershift.spec.js",
-                        "column": 19,
-                        "line": 74
-                      },
-                      "message": "Error: page.waitForTimeout: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 72 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//input[@value=\"AM\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m 73 |\u001b[39m        }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 74 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m10000\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 75 |\u001b[39m\n \u001b[90m 76 |\u001b[39m        \u001b[90m// click save\u001b[39m\n \u001b[90m 77 |\u001b[39m        \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//button[text()=\" Save \"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[2m    at D:\\Playwright\\LearnPlaywrightB36\\tests\\DataDrivenTest\\tasj5workershift.spec.js:74:19\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-04T23:54:37.937Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\DataDrivenTest-tasj5workershift-verify-pay-grade--shift2-chromium\\error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\DataDrivenTest\\tasj5workershift.spec.js",
-                    "column": 19,
-                    "line": 74
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "cc68cd3335063de9c55b-20a53719b66bd2c7636f",
-          "file": "DataDrivenTest/tasj5workershift.spec.js",
-          "line": 10,
+          "id": "3a0ff82f43590d391956-4fd9dd2dd9137d72cf57",
+          "file": "JSrelated/GreenKart2.spec.js",
+          "line": 4,
           "column": 5
         }
       ]
@@ -225,11 +161,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-04T23:54:02.032Z",
-    "duration": 56444.37200000044,
+    "startTime": "2026-06-11T06:47:00.722Z",
+    "duration": 20979.69599999953,
     "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
