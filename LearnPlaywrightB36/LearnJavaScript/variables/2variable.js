@@ -52,4 +52,3 @@ if(true)
     console.log(unam)
 }
 // console.log(unam) not possible out side the block
-

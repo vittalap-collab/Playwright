@@ -3,7 +3,8 @@
 // require('dotenv').config({
 //   path: './.env'
 // });
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 import { defineConfig, devices } from '@playwright/test';
 
 //require('dotenv').config()
