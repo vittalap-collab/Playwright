@@ -111,14 +111,14 @@
   },
   "suites": [
     {
-      "title": "JSrelated\\ConsoleStatments.spec.js",
-      "file": "JSrelated/ConsoleStatments.spec.js",
+      "title": "Hooks\\task1.spec.js",
+      "file": "Hooks/task1.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "login with text extraction with console statments",
-          "ok": true,
+          "title": "verify add employe with img png",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -129,104 +129,75 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 28460,
-                  "errors": [],
-                  "stdout": [
+                  "status": "failed",
+                  "duration": 55076,
+                  "error": {
+                    "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//img[@src=\"/web/images/default-photo.jpg\"]')\u001b[22m\n",
+                    "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//img[@src=\"/web/images/default-photo.jpg\"]')\u001b[22m\n\n    at D:\\Playwright\\LearnPlaywrightB36\\tests\\Hooks\\task1.spec.js:28:71",
+                    "location": {
+                      "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\Hooks\\task1.spec.js",
+                      "column": 71,
+                      "line": 28
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m test(\u001b[32m'verify add employe with img png'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 27 |\u001b[39m     \u001b[90m//await page.locator('//i[@class=\"oxd-icon bi-plus\"]').click()\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//img[@src=\"/web/images/default-photo.jpg\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m10000\u001b[39m)\n \u001b[90m 30 |\u001b[39m })\n \u001b[90m 31 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
                     {
-                      "text": "Step1: navigate to login page\n"
+                      "location": {
+                        "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\Hooks\\task1.spec.js",
+                        "column": 71,
+                        "line": 28
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//img[@src=\"/web/images/default-photo.jpg\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 26 |\u001b[39m test(\u001b[32m'verify add employe with img png'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 27 |\u001b[39m     \u001b[90m//await page.locator('//i[@class=\"oxd-icon bi-plus\"]').click()\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//img[@src=\"/web/images/default-photo.jpg\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m10000\u001b[39m)\n \u001b[90m 30 |\u001b[39m })\n \u001b[90m 31 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\LearnPlaywrightB36\\tests\\Hooks\\task1.spec.js:28:71\u001b[22m"
                     },
                     {
-                      "text": "Step1: Page loaded\n"
-                    },
-                    {
-                      "text": "Step2: extract username text\n"
-                    },
-                    {
-                      "text": "Step2: Extracted username text: Username : Admin\n"
-                    },
-                    {
-                      "text": "Step2: Parsed username value: Admin\n"
-                    },
-                    {
-                      "text": "Step3: fill username\n"
-                    },
-                    {
-                      "text": "Step3: Username filled\n"
-                    },
-                    {
-                      "text": "Step4: extract password text\n"
-                    },
-                    {
-                      "text": "Step4: Extracted password text: Password : admin123\n"
-                    },
-                    {
-                      "text": "Step4: Parsed password value: admin123\n"
-                    },
-                    {
-                      "text": "Step5: fill password\n"
-                    },
-                    {
-                      "text": "Step5: Password filled\n"
-                    },
-                    {
-                      "text": "Step6: click login\n"
-                    },
-                    {
-                      "text": "Step6: Login clicked\n"
-                    },
-                    {
-                      "text": "Step7: verify time and date element\n"
-                    },
-                    {
-                      "text": "Step7: Verified Time at Work is visible\n"
-                    },
-                    {
-                      "text": "Step8: extract all menu items\n"
-                    },
-                    {
-                      "text": "Step8: Extracted menu items: [\n  \u001b[32m'Admin'\u001b[39m,       \u001b[32m'PIM'\u001b[39m,\n  \u001b[32m'Leave'\u001b[39m,       \u001b[32m'Time'\u001b[39m,\n  \u001b[32m'Recruitment'\u001b[39m, \u001b[32m'My Info'\u001b[39m,\n  \u001b[32m'Performance'\u001b[39m, \u001b[32m'Dashboard'\u001b[39m,\n  \u001b[32m'Directory'\u001b[39m,   \u001b[32m'Maintenance'\u001b[39m,\n  \u001b[32m'Claim'\u001b[39m,       \u001b[32m'Buzz'\u001b[39m\n]\n"
-                    },
-                    {
-                      "text": "Step9: Menu contains PIM: \u001b[33mtrue\u001b[39m\n"
-                    },
-                    {
-                      "text": "Step9: Assertion completed: PIM was found in menu items\n"
+                      "location": {
+                        "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\Hooks\\task1.spec.js",
+                        "column": 54,
+                        "line": 22
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 20 |\u001b[39m\n \u001b[90m 21 |\u001b[39m test\u001b[33m.\u001b[39mafterEach( \u001b[36masync\u001b[39m({page}) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Save'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'div.oxd-toast.oxd-toast--success.oxd-toast-container--toast'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m 24 |\u001b[39m })\n \u001b[90m 25 |\u001b[39m  \u001b[0m\n\u001b[2m    at D:\\Playwright\\LearnPlaywrightB36\\tests\\Hooks\\task1.spec.js:22:54\u001b[22m"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-11T09:34:31.089Z",
+                  "startTime": "2026-06-12T18:55:29.440Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\JSrelated-ConsoleStatments-0971f-tion-with-console-statments-chromium\\test-finished-1.png"
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Playwright\\LearnPlaywrightB36\\test-results\\Hooks-task1-verify-add-employe-with-img-png-chromium\\error-context.md"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Playwright\\LearnPlaywrightB36\\tests\\Hooks\\task1.spec.js",
+                    "column": 71,
+                    "line": 28
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "700b713d3ce25374e855-a6256df662ae69e152c2",
-          "file": "JSrelated/ConsoleStatments.spec.js",
-          "line": 5,
-          "column": 5
+          "id": "0058b164944fd6e64e64-5fb84529a7849a77bd70",
+          "file": "Hooks/task1.spec.js",
+          "line": 26,
+          "column": 1
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-11T09:34:28.936Z",
-    "duration": 30754.395000001416,
-    "expected": 1,
+    "startTime": "2026-06-12T18:55:25.221Z",
+    "duration": 59676.16500000004,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
